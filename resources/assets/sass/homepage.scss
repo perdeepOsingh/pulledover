@@ -1,98 +1,82 @@
+$fontFamily: Gotham;
+
 body {
-    margin-bottom: 140px;
+  margin-bottom: 0px;
 }
 
-.footer {
-    font-size: 1.25em;
-    margin-bottom: 2em;
-    margin-top: 2em;
+@import "footer";
+
+.homepageContent{
+  margin-bottom:10em;
+  line-height:1.70;
 }
 
-
-.home-page-columns {
-    font-family: georgia, serif;
-
-    .well {
-        padding: 2em;
-    }
-    
-    p {
-        font-size: 1.25em;
-        line-height: 1.7;
-        margin-bottom: 1.25em;
-
-        @media only screen and (min-width: 500px) {
-            font-size: 1.5em;
-        }
-    }
+p{
+  margin: 10px 0 20px;
 }
 
 .home-page-hero {
-    background-color: #1a1a1a;
-    background-image: url('../images/hero-header-small.jpg');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 600px;
-    margin-bottom: 4em;
-    margin-top: -20px;
+  background-color: #1a1a1a;
+  background-image: url('../images/hero-header-small.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  margin-bottom: 4em;
+  margin-top: -20px;
 
-    @media only screen and (min-width: 700px) {
-        background-image: url('../images/hero-header.jpg');
-        background-position: top right;
-        height: calc(100vh - 80px);
-        min-height: 650px;
-        max-height: 912px;
-    }
+  @media only screen and (min-width: 700px) {
+    background-image: url('../images/hero-header.jpg');
+    background-position: top right;
+    height: calc(100vh - 80px);
+    min-height: 650px;
+    max-height: 912px;
+  }
 }
 
 .pitch-column {
+  color: #fff;
+  font-family: georgia, serif;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+
+  @media only screen and (min-width: 700px) {
+    margin-left: 5rem;
+    margin-top: 13rem;
+    width: 550px;
+  }
+
+  a {
     color: #fff;
-    font-family: georgia, serif;
-    margin-top: 1rem;
-    text-align: center;
-    width: 100%;
-
-    @media only screen and (min-width: 700px) {
-        margin-left: 5rem;
-        margin-top: 13rem;
-        width: 550px;
-    }
-
-    a {
-        color: #fff;
-    }
+  }
 }
 
 .pitch {
-    background: rgba(0, 0, 0, .75);
-    padding: 2em;
-    text-align: left;
+  background: rgba(0, 0, 0, .75);
+  padding: 2em;
+  text-align: left;
 
-    .big-number {
-        color: #fff;
-        font-family: 'Roboto Condensed', arial, sans-serif;
-        font-size: 3rem;
-        font-weight: 400;
+  .big-number {
+    color: #fff;
+    font-family: 'Roboto Condensed', arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
 
-        @media only screen and (min-width: 400px) {
-            font-size: 4.5rem;
-        }
-
-        @media only screen and (min-width: 700px) {
-            font-size: 6rem;
-        }
+    @media only screen and (min-width: 400px) {
+      font-size: 4.5rem;
     }
 
-    @media only screen and (min-width: 992px) {
-        background: rgba(0, 0, 0, 0.3);
+    @media only screen and (min-width: 700px) {
+      font-size: 6rem;
     }
+  }
+
+  @media only screen and (min-width: 992px) {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .pitch-donate-button {
-    font-size: 1.2em;
-}
-
-.home-page-well h2 {
-    margin-bottom: 1em;
+  font-size: 1.2em;
 }
